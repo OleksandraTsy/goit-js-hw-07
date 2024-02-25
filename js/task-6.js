@@ -25,11 +25,11 @@ let boxsize = '';
 let newDiv = '';
 
 function createBoxes(amount) {
-  boxes.innerHTML = '';
+  divBox.innerHTML = '';
   boxsize = 30;
   for (let i = 1; i <= amount; i += 1) {
     newDiv = `<div style='width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}'></div>`;
-    boxes.insertAdjacentHTML("beforeend", newDiv);
+    divBox.insertAdjacentHTML("beforeend", newDiv);
     boxsize += 10;
   };
 }
